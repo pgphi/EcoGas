@@ -79,7 +79,7 @@ if __name__ == '__main__':
         st.text("")
         st.text("")
 
-        st.subheader("Tipps zum Gas sparen")
+        st.subheader("Tipps zum Gas Sparen")
 
         tab1, tab2, tab3 = st.tabs(["Duschen", "Kochen und Backen", "Temperatur reduzieren"])
 
