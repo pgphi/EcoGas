@@ -29,3 +29,7 @@ ___
 
 - Streamlit Documentation: https://docs.streamlit.io/library/api-reference
 - API Data: https://agsi.gie.eu/
+
+### For further Information on Forecasting Model see my other Project:
+https://github.com/pgphi/GasPred
+
