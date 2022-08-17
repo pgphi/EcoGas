@@ -169,7 +169,7 @@ def get_gas_info(url):
 
     response = requests.get(url, headers={'x-key': "eb50f4b9062b4cfcf3103359c54151a3"})
     data = response.json()
-    print(data)
+    # print(data)
     data = data.get("data")  # list of dictionaries containing gas information from last 30 days
 
     try:
@@ -191,30 +191,32 @@ def get_gas_info(url):
         return [provider_name, cur_gasInStorage, cur_withdraw, cur_trend, cur_Capacity]
 
 
-info = get_gas_info("https://agsi.gie.eu/api?country=DE&company=37X0000000000151")
-print(info)
-
-
 # Create user interface Metrics
 def create_metrics(providers):
 
     for y in providers.keys():
+
         # Get Data for Each Gas Provider
         name = get_gas_info(providers[y])[0]  # i.e. Uniper Energy
+        # name = "Example"
         print(name)
         cur_gasInStorage = get_gas_info(providers[y])[1]  # In Percent %
+        # cur_gasInStorage = 200
         print(cur_gasInStorage)
-        cur_capacity = get_gas_info(providers[y])[4]  # In Percent %
+        cur_capacity = get_gas_info(providers[y])[4]  # In TWh
+        # cur_capacity = 244
         print(cur_capacity)
         cur_withdraw = get_gas_info(providers[y])[2]  # in Gwh/d
+        # cur_withdraw = 344
         print(cur_withdraw)
         cur_trend = get_gas_info(providers[y])[3]  # Change in Percent %
+        # cur_trend = 33
         print(cur_trend)
 
         # Create Metric for Each Gas Provider
         st.write(f"Gasanbieter: {name}")
         col1, col2, col3 = st.columns(3)
         col1.metric("Gas Kapazität", f"{cur_capacity} TWh")
-        col2.metric("Gefüllt", f"{cur_gasInStorage} %")
-        col3.metric("Gas Nachfrage", f"{cur_withdraw} GWh/Tag", f"{cur_trend} %")
+        col2.metric("Füllstand", f"{cur_gasInStorage} %")
+        col3.metric("Gas Nachfrage pro Tag", f"{cur_withdraw} GWh/Tag", f"{cur_trend} %")
         st.markdown("***")
