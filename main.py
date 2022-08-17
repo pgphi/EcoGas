@@ -9,8 +9,7 @@ if __name__ == '__main__':
     while True:  # Daemon Thread Architecture
 
         st.title("Überblick deutscher Gasspeicher")
-        today = datetime.today().strftime("%m-%d-%Y")
-        st.subheader(str(today))
+        st.subheader(datetime.today().strftime("%d-%m-%Y"))
         st.text("")
         st.text("")
 
@@ -40,7 +39,7 @@ if __name__ == '__main__':
             'Tragen Sie ihren vergangenen bzw. momentanen Gasverbrauch ein z.B. 10000kWh:')  # i.e. number = 10000
 
         date = st.date_input(
-            "Zu welchem Zeitpunkt möchten Sie ihre Gaskosten vorhersagen z.B. am 31.12.2022?",
+            "Zu welchem Zeitpunkt möchten Sie ihre Gaskosten vorhersagen z.B. am 31-12-2022?",
             date(2019, 7, 6))  # i.e. date = "2022/08/01"
 
         error = 0.008515221391126407 # mae price related
