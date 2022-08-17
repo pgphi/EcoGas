@@ -214,7 +214,7 @@ def create_metrics(providers):
         print(cur_trend)
 
         # Create Metric for Each Gas Provider
-        st.write(f"Gasanbieter: {name}")
+        st.write(f"Gasspeicher: {name}")
         col1, col2, col3 = st.columns(3)
         col1.metric("Gas Kapazität", f"{cur_capacity} TWh")
         col2.metric("Füllstand", f"{cur_gasInStorage} %")
