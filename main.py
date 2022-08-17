@@ -26,9 +26,9 @@ if __name__ == '__main__':
                     "Erwin Ringel")
         st.markdown("***")
         st.text("")
-        st.write("")
         
         st.subheader("Füllstände einzelner Gasspeicher in Deutschland")
+        st.txt("")
         create_metrics(GAS_PROVIDERS)
 
         with st.expander("Siehe Quelle"):
