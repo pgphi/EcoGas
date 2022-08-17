@@ -66,5 +66,5 @@ if __name__ == '__main__':
             st.write(
                 "https://www.energiewechsel.de/KAENEF/Navigation/DE/Thema/energiespartipps.html?etcc_cmp=energiewechsel&etcc_med=sea&etcc_par=google-ads&etcc_ctv=energieeffizienz-energie-sparen")
         st.markdown("***")
-        st.caption("Philipp Ganster ©")
+        st.caption("Philipp Ganster © | contact me via www.linkedin.com/in/pganster")
         time.sleep(60 * 60 * 10)  # Request API data every 10 hours
