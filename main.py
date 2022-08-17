@@ -74,6 +74,7 @@ if __name__ == '__main__':
 
         with st.expander("Siehe Quelle"):
             st.write("https://agsi.gie.eu/")
+            st.write("Alle Informationen zu den Gasspeichern und Füllständen werden täglich um 19:00 Uhr (7:00pm) (MESZ) geändert.") 
             st.write("Für mehr Informationen zum Gasstand siehe:")
             st.write("https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Versorgungssicherheit/aktuelle_gasversorgung/start.html")
         st.text("")
