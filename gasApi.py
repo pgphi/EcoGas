@@ -217,6 +217,6 @@ def create_metrics(providers):
         st.write(f"Gasspeicher: {name}")
         col1, col2, col3 = st.columns(3)
         col1.metric("Gas Kapazität", f"{cur_capacity} TWh")
-        col2.metric("Füllstand", f"{cur_gasInStorage} %")
+        col2.metric("Füllstand des Gasspeichers", f"{cur_gasInStorage} %")
         col3.metric("Gas Nachfrage pro Tag", f"{cur_withdraw} GWh/Tag", f"{cur_trend} %")
         st.markdown("***")
