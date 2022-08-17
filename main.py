@@ -8,8 +8,8 @@ if __name__ == '__main__':
 
     while True:  # Daemon Thread Architecture
 
-        st.title("Überblick Deutscher Gasspeicher")
-        today = datetime.today().strftime("%d-%m-%Y")
+        st.title("Überblick deutscher Gasspeicher")
+        today = datetime.today().strftime("%m-%d-%Y")
         st.subheader(str(today))
         st.text("")
         st.text("")
