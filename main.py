@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
         st.title("Überblick Deutscher Gasspeicher")
         today = datetime.today().strftime("%d-%m-%Y")
-        st.subheader(today)
+        st.subheader(str(today))
         st.text("")
         st.text("")
 
