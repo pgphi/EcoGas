@@ -65,7 +65,7 @@ def web_app():
             'Berücksichtigen Sie außerdem Steuerersparnisse, kurzfristige Änderungen und andere externe Faktoren, die sich auf die Kosten auswirken können.')
         st.write("Für weitere Informationen siehe:")
         st.write("https://www.bundesregierung.de/breg-de/themen/klimaschutz/energiemarkt-stabilisieren-2059778")
-    st.info("Falls die Berechnung zu lange dauert: Bitte aktualisieren Sie die Seite oben in ihrem Browser.")
+    st.info("Falls die Berechnung zu lange dauert: Bitte aktualisieren Sie die Seite oben in ihrem Browser und versuchen Sie es erneut.")
     st.text("")
     st.text("")
     st.text("")
