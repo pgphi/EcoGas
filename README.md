@@ -41,7 +41,7 @@ ___
     Polynomial Function MAE = 0.008515221391126407
     Polynomial Function R Squared = 0.6370797480659653
     
-###### Function
+##### Function
 
 $\tiny f(x_1 , x_2) = 5.02 - (6.69 {e-09}) * x_1 + (1.25 {e-09}) * x_2 + (2.24 {e-18}) * x_1^2 - (7.83 {e-19}) * x_2^2 - (3.19 {e-19}) *x_1 * x_2$
 
