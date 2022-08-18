@@ -160,7 +160,6 @@ example_dataset = dict(last_page=142, total=30,
          "workingGasVolume": "60.6108", "injectionCapacity": "1329.64", "withdrawalCapacity": "1910.74", "status": "C",
          "trend": "-0.33", "full": "55.83", "info": []}])
 
-@st.cache(show_spinner=False)
 def get_gas_info(url):
     """
     :param url: url from API of each gas storage in germany
@@ -193,7 +192,6 @@ def get_gas_info(url):
 
 # Create user interface Metrics
 
-@st.cache(show_spinner=False)
 def create_metrics(providers):
 
     for y in providers.keys():
