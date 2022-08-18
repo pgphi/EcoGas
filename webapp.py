@@ -111,4 +111,4 @@ def web_app():
         st.write(
             "https://www.energiewechsel.de/KAENEF/Navigation/DE/Thema/energiespartipps.html?etcc_cmp=energiewechsel&etcc_med=sea&etcc_par=google-ads&etcc_ctv=energieeffizienz-energie-sparen")
     st.markdown("***")
-    st.caption("Philipp Ganster © www.linkedin.com/in/pganster")
+    st.caption("Philipp Ganster © www.linkedin.com/in/pganster | Mehr Infos über das Projekt: https://github.com/pgphi/EcoGas ")
