@@ -36,3 +36,10 @@ ___
     3. Commit and Push Project to GitHub Repository
     4. Deploy Repository on GitHub to Heroku
     5. Use GitHub Desktop for continuous Development
+ 
+ ### Information about the Model for Price Prediction
+    Polynomial Function MAE = 0.008515221391126407
+    Polynomial Function R Squared = 0.6370797480659653
+    (r'''
+             \tiny f(x_1 , x_2) = 5.02 - (6.69 {e-09}) * x_1 + (1.25 {e-09}) * x_2 + (2.24 {e-18}) * x_1^2 - (7.83 {e-19}) * x_2^2 - (3.19 {e-19}) *x_1 * x_2
+             ''')
