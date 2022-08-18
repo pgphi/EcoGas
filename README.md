@@ -1,3 +1,10 @@
+___
+
+Author: Philipp Ganster
+Link to Project: https://gasspeicher-deutschland.herokuapp.com/
+
+___
+
 # About this Project
 
     Due to a spike in german gas prices, the aim of this project is
@@ -20,3 +27,11 @@
 
 - Streamlit Documentation: https://docs.streamlit.io/library/api-reference
 - API Data: https://agsi.gie.eu/
+
+### About the Development Process (Pipeline for this Project)
+
+    1. Develop App locally with Pycharm CE
+    2. Use Streamlit (streamlit run main.py) for Agile Testing
+    3. Commit and Push Project to GitHub Repository
+    4. Deploy Repository on GitHub to Heroku
+    5. Use GitHub Desktop for continuous Development
