@@ -43,6 +43,6 @@ ___
     
 ##### Function
 
-$\tiny f(x_1 , x_2) = 5.02 - (6.69 {e-09}) * x_1 + (1.25 {e-09}) * x_2 + (2.24 {e-18}) * x_1^2 - (7.83 {e-19}) * x_2^2 - (3.19 {e-19}) *x_1 * x_2$
+$f(x_1 , x_2) = 5.02 - (6.69 {e-09}) * x_1 + (1.25 {e-09}) * x_2 + (2.24 {e-18}) * x_1^2 - (7.83 {e-19}) * x_2^2 - (3.19 {e-19}) *x_1 * x_2$
 
 Further Information see Repository: https://github.com/pgphi/GasPred
