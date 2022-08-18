@@ -160,7 +160,7 @@ example_dataset = dict(last_page=142, total=30,
          "workingGasVolume": "60.6108", "injectionCapacity": "1329.64", "withdrawalCapacity": "1910.74", "status": "C",
          "trend": "-0.33", "full": "55.83", "info": []}])
 
-
+@st.cache(show_spinner=False)
 def get_gas_info(url):
     """
     :param url: url from API of each gas storage in germany
@@ -192,6 +192,8 @@ def get_gas_info(url):
 
 
 # Create user interface Metrics
+
+@st.cache(show_spinner=False)
 def create_metrics(providers):
 
     for y in providers.keys():
@@ -214,9 +216,9 @@ def create_metrics(providers):
         print(cur_trend)
 
         # Create Metric for Each Gas Provider
-        st.write(f"Gasspeicher: {name}")
+        st.write(f"Gasanbieter: {name}")
         col1, col2, col3 = st.columns(3)
         col1.metric("Gas Kapazität", f"{cur_capacity} TWh")
-        col2.metric("Füllstand des Gasspeichers", f"{cur_gasInStorage} %")
+        col2.metric("Füllstand", f"{cur_gasInStorage} %")
         col3.metric("Gas Nachfrage pro Tag", f"{cur_withdraw} GWh/Tag", f"{cur_trend} %")
         st.markdown("***")

@@ -1,13 +1,3 @@
-___
-
-Author: Philipp Ganster
-
-View Project in Streamlit: https://pgphi-ecogas-main-tcn38m.streamlitapp.com/
-
-View Project on Heroku (faster): https://gasspeicher-deutschland.herokuapp.com/
-
-___
-
 # About this Project
 
     Due to a spike in german gas prices, the aim of this project is
@@ -19,8 +9,9 @@ ___
     - Daily Change in Demand in %
     - Daily Change in Demain in GWh
 
-    A Daemon Thread Architecture is used to 
-    request the API data every 10 hours.
+    Advanced Python Schedular is used for running script 
+    every day at 8pm, since API Data is refreshed every day at 7:30pm (MESZ)
+    https://apscheduler.readthedocs.io/en/3.x/
 
     
 
@@ -29,7 +20,3 @@ ___
 
 - Streamlit Documentation: https://docs.streamlit.io/library/api-reference
 - API Data: https://agsi.gie.eu/
-
-### For further Information on Forecasting Model see my other Project:
-https://github.com/pgphi/GasPred
-
